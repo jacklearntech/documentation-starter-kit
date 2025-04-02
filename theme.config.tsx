@@ -2,7 +2,10 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>Jack Space</span>,
+  logo: <span>Jack Wiki 杰克百科</span>,
+  head: {
+    faviconGlyph: '✦'
+  }
   project: {
     link: 'https://github.com/jacklearntech/documentation-starter-kit',
   },
