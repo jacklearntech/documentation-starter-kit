@@ -3,6 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   logo: <span>Jack Wiki 杰克百科</span>,
+  faviconGlyph: '📖',
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
