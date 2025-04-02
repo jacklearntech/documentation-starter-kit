@@ -1,16 +1,16 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "skills": "Mastered Skills",
-  "projects": "Demo Projects",
+  "index": "Introduction :: 简介",
+  "skills": "Mastered Skills :: 主打技能",
+  "projects": "Demo Projects :: 展示项目",
+  "end": "End :: 结尾",
   "about": {
-    "title": "About",
+    "title": "About :: 关于",
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Contact ↗ :: 联系",
     "type": "page",
-    "href": "https://twitter.com/jackbu123",
+    "href": "https://www.instagram.com/jackbu12",
     "newWindow": true
   }
 }
