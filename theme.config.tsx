@@ -5,7 +5,7 @@ const config: DocsThemeConfig = {
   logo: <span>Jack Wiki 杰克百科</span>,
   head: {
     faviconGlyph: '✦'
-  }
+  },
   project: {
     link: 'https://github.com/jacklearntech/documentation-starter-kit',
   },
