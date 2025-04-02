@@ -1,0 +1,117 @@
+
+# Google Apps Script 指南
+
+## 什么是 Google Apps Script？
+
+Google Apps Script (GAS) 是一个基于 JavaScript 的云脚本语言，用于轻量级应用程序开发，可以自动化 Google Workspace 产品（如 Docs、Sheets、Gmail 等）并构建自定义功能。
+
+    function myFunction() {
+      Logger.log('Hello, Google Apps Script!');
+    }
+
+## 主要特性
+
+-   **与 Google 服务深度集成**：可访问 Gmail、Drive、Calendar、Sheets 等
+    
+-   **基于 JavaScript**：语法与 JS 相似，学习曲线平缓
+    
+-   **云端执行**：无需服务器，代码在 Google 云中运行
+    
+-   **触发器**：支持时间驱动和事件驱动的自动化
+    
+-   **Web 应用**：可发布为 Web 应用或 API
+    
+
+## 常见用途
+
+1.  **自动化 Google Sheets**
+    
+    -   自定义函数
+        
+    -   数据处理和转换
+        
+    -   自动报表生成
+        
+2.  **增强 Gmail 功能**
+    
+    -   自动回复
+        
+    -   邮件分类和处理
+        
+    -   批量操作
+        
+3.  **连接 Google 服务**
+    
+    -   在 Docs 中自动生成内容
+        
+    -   管理 Calendar 事件
+        
+    -   与 Drive 文件交互
+        
+
+## 基本示例
+
+### 1. 操作 Google Sheets
+
+    function addDataToSheet() {
+      const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+      sheet.getRange(1, 1).setValue('Hello, Sheets!');
+    }
+
+### 2. 发送电子邮件
+
+
+    function sendEmail() {
+      GmailApp.sendEmail(
+        'recipient@example.com',
+        '主题',
+        '邮件内容'
+      );
+    }
+
+### 3. 创建文档
+
+    function createDoc() {
+      const doc = DocumentApp.create('新文档');
+      doc.getBody().appendParagraph('这是我的第一个自动创建的文档');
+    }
+
+## 开发环境
+
+1.  **脚本编辑器**：通过  `工具 > 脚本编辑器`  在 Google 产品中访问
+    
+2.  **新版编辑器**：基于云的开发环境 ([https://script.google.com](https://script.google.com/))
+    
+3.  **CLI 工具**：使用  `clasp`  进行本地开发
+    
+
+## 部署选项
+
+-   **Web 应用**：作为独立应用部署
+    
+-   **API 可执行**：作为 REST 端点
+    
+-   **附加组件**：发布到 Google Workspace Marketplace
+    
+-   **绑定脚本**：与特定文档关联
+    
+
+## 学习资源
+
+-   [官方文档](https://developers.google.com/apps-script)
+    
+-   [示例库](https://developers.google.com/apps-script/examples)
+    
+-   [社区论坛](https://groups.google.com/g/google-apps-script-community)
+    
+
+## 限制
+
+-   执行时间限制（6分钟/普通账户）
+    
+-   API 调用配额
+    
+-   部分 JavaScript 特性不可用
+    
+
+Google Apps Script 是快速自动化 Google 工作流程和构建轻量级应用的强大工具！
