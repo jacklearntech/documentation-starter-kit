@@ -17,7 +17,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://www.instagram.com/jackbu12/',
     icon: (
-      <svg height="24px" width="24px">
+      <svg height="24px" width="24px" viewBox="0 0 24 24">
 <g id="XMLID_504_">
 	<path id="XMLID_505_" d="M38.52,0.012h222.978C282.682,0.012,300,17.336,300,38.52v222.978c0,21.178-17.318,38.49-38.502,38.49
 		H38.52c-21.184,0-38.52-17.313-38.52-38.49V38.52C0,17.336,17.336,0.012,38.52,0.012z M218.546,33.329
